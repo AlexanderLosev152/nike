@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Nike</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="fas fa-bars menu__bar" id="menu-bar"></div>
+      <a class="logo" href="#">nike</a>
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#products">products</a>
+        <a href="#featured">featured</a>
+        <a href="#review">review</a>
+      </nav>
+      <div class="icons">
+        <a class="fas fa-heart" href="#"></a>
+        <a class="fas fa-shopping-cart" href="#"></a>
+        <a class="fas fa-user" href="#"></a>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="slide__container active">
+        <div class="slide">
+          <div class="content">
+            <span>nike red shoes</span>
+            <h3>nike metson shoes</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+              exercitationem quo commodi ut repellendus quasi architecto
+              perferendis harum debitis similique!
+            </p>
+            <a class="btn" href="#">add to cart</a>
+          </div>
+          <div class="images">
+            <img class="shoe" src="images/home-shoe-1.png" alt="shoes" />
+            <img class="text" src="images/home-text-1.png" alt="shoes" />
+          </div>
+        </div>
+      </div>
+      <div class="slide__container">
+        <div class="slide">
+          <div class="content">
+            <span>nike blue shoes</span>
+            <h3>nike metson shoes</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+              exercitationem quo commodi ut repellendus quasi architecto
+              perferendis harum debitis similique!
+            </p>
+            <a class="btn" href="#">add to cart</a>
+          </div>  
+          <div class="images">
+            <img class="shoe" src="images/home-shoe-2.png" alt="shoes" />
+            <img class="text" src="images/home-text-2.png" alt="shoes" />
+          </div>
+        </div>
+      </div>
+      <div class="slide__container">
+        <div class="slide">
+          <div class="content">
+            <span>nike yelow shoes</span>
+            <h3>nike metson shoes</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+              exercitationem quo commodi ut repellendus quasi architecto
+              perferendis harum debitis similique!
+            </p>
+            <a class="btn" href="#">add to cart</a>
+          </div>
+          <div class="images">
+            <img class="shoe" src="images/home-shoe-3.png" alt="shoes" />
+            <img class="text" src="images/home-text-3.png" alt="shoes" />
+          </div>
+        </div>
+      </div>
+      <div class="prev fas fa-chevron-left" id="prev" onclick="prev()"></div>
+      <div class="next fas fa-chevron-right" id="next" onclick="next()"></div>
+
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>
