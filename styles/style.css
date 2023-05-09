@@ -28,11 +28,24 @@ section {
   padding: 2rem 9%;
 }
 
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: var(--black);
+  padding: 1rem;
+}
+
+.heading span {
+  text-transform: uppercase;
+  color: var(--orange);
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
-  border-radius: .5rem;
-  border: .2rem solid var(--black);
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--black);
   font-weight: bolder;
   font-size: 1.7rem;
   color: var(--black);
@@ -45,7 +58,6 @@ section {
   background: var(--orange);
   color: #fff;
 }
-
 
 /* header */
 
@@ -91,9 +103,9 @@ section {
 .menu__bar {
   font-size: 2.5rem;
   padding: 0.5rem 1.5rem;
-  border: .1rem solid  var(--black);
+  border: 0.1rem solid var(--black);
   color: var(--black);
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   cursor: pointer;
   display: none;
 }
@@ -128,7 +140,7 @@ section {
 
 .content {
   flex: 1 1 40rem;
-  animation: slideContent .5s linear 1s backwards;
+  animation: slideContent 0.5s linear 1s backwards;
 }
 
 @keyframes slideContent {
@@ -136,7 +148,7 @@ section {
     opacity: 0;
     transform: translateX(-10rem);
   }
-} 
+}
 
 .images {
   flex: 1 1 50rem;
@@ -148,12 +160,12 @@ section {
 .shoe {
   width: 100%;
   transform: rotate(-35deg);
-  animation: shoe .3s linear;
+  animation: shoe 0.3s linear;
 }
 
 @keyframes shoe {
   0% {
-    transform: rotate(0deg) scale(.5);
+    transform: rotate(0deg) scale(0.5);
   }
 }
 
@@ -162,7 +174,7 @@ section {
   top: 0;
   left: 0;
   z-index: -1;
-  animation: shoeText .5s linear .5s backwards;
+  animation: shoeText 0.5s linear 0.5s backwards;
 }
 
 @keyframes shoeText {
@@ -171,7 +183,6 @@ section {
     top: -10rem;
   }
 }
-
 
 .content span {
   font-size: 2rem;
@@ -190,19 +201,19 @@ section {
 }
 
 .slide__container:nth-child(1) .slide {
-  background: url('../images/home-bg-1.jpg');
+  background: url("../images/home-bg-1.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .slide__container:nth-child(2) .slide {
-  background: url('../images/home-bg-2.jpg');
+  background: url("../images/home-bg-2.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .slide__container:nth-child(3) .slide {
-  background: url('../images/home-bg-3.jpg');
+  background: url("../images/home-bg-3.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -227,7 +238,7 @@ section {
   line-height: 4.5rem;
   font-size: 2rem;
   color: var(--black);
-  border: .2rem solid var(--black);
+  border: 0.2rem solid var(--black);
   cursor: pointer;
   text-align: center;
 }
@@ -246,10 +257,253 @@ section {
   right: 3rem;
 }
 
+/* service */
+
+.service .box__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  background: #f9f9f9;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.service .box__container .box {
+  text-align: center;
+  flex: 1 1 30rem;
+}
+
+.service .box__container .box i {
+  font-size: 4rem;
+  color: var(--orange);
+}
+
+.service .box__container .box h3 {
+  font-size: 2rem;
+  color: var(--black);
+  padding-top: 1rem;
+}
+
+.service .box__container .box p {
+  font-size: 1.5rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+/* products */
+
+.products .box__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.products .box__container .box {
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: #f9f9f9;
+  flex: 1 1 30rem;
+}
+
+.products .box__container .box .content {
+  padding: 1.5rem;
+}
+
+.products .box__container .box img {
+  height: 10rem;
+  transform: rotate(-35deg);
+  filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.1));
+  margin: 8rem 2rem;
+}
+
+.products .box__container .box:hover img {
+  transform: rotate(-35deg) scale(1.2);
+}
+
+.products .box__container .box .icon {
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  top: 0.5rem;
+  left: -10rem;
+}
+
+.products .box__container .box:hover .icon {
+  left: 1rem;
+}
+
+.products .box__container .box .icon a {
+  height: 4.5rem;
+  width: 5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  border: 0.1rem solid var(--black);
+  border-radius: 0.5rem;
+  background: #fff;
+  margin-top: 0.5rem;
+}
+
+.products .box__container .box .icon a:hover {
+  background: var(--orange);
+  color: #fff;
+}
+
+.products .box__container .box .content h3 {
+  color: var(--black);
+  font-size: 2.5rem;
+}
+
+.products .box__container .box .content .price {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bolder;
+  padding: 1rem 0;
+}
+
+.products .box__container .box .content .price span {
+  color: var(--orange);
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+
+.products .box__container .box .content .stars {
+  padding-bottom: 1rem;
+}
+
+.products .box__container .box .content .stars i {
+  font-size: 1.7rem;
+  color: var(--orange);
+}
+
+/* featured */
+
+.featured .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background: #f9f9f9;
+  padding: 2rem;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.featured .row .content {
+  flex: 1 1 40rem;
+}
+
+.featured .row .image__container {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex: 1 1 50rem;
+}
+
+.featured .row .image__container .small__image {
+  width: 20%;
+}
+
+.featured .row .image__container .big__image {
+  width: 75%;
+  padding: 1rem;
+}
+
+.featured .row .image__container .small__image img {
+  width: 100%;
+  padding: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.featured .row .image__container .small__image img:hover {
+  background: #ccc;
+}
+
+.featured .row .image__container .big__image img {
+  width: 100%;
+}
+
+.featured .row .image__container .big__image img:hover {
+  transform: scale(1.05);
+}
+
+.featured .row .content h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.featured .row .content .stars i {
+  font-size: 1.7rem;
+  color: var(--orange);
+  padding: 0.5rem 0;
+}
+
+.featured .row .content p {
+  font-size: 2.5rem;
+  color: #999;
+  padding: 1rem 0;
+}
+
+.featured .row .content .price {
+  font-size: 2.5rem;
+  color: var(--black);
+  font-weight: bolder;
+}
+
+/* review */
+
+.review .box__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.review .box__container .box {
+  flex: 1 1 30rem;
+  text-align: center;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 5rem;
+  background: #f9f9f9;
+  padding: 2rem;
+}
+
+.review .box__container .box img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 15rem;
+  height: 15rem;
+  margin: 1rem 0;
+}
+
+.review .box__container .box h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.review .box__container .box p {
+  font-size: 1.6rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+.review .box__container .box .stars i {
+  color: var(--orange);
+  font-size: 2rem;
+}
+
+
+
+
 
 /* midia */
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
   html {
     font-size: 55%;
   }
@@ -261,8 +515,7 @@ section {
   }
 }
 
-
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .menu__bar {
     display: block;
   }
@@ -272,7 +525,7 @@ section {
     left: -120%;
     width: 100%;
     background: #eee;
-    border-top: .1rem solid rgba(0,0,0,.1);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
   }
 
   .navbar.active {
@@ -282,8 +535,8 @@ section {
   .navbar a {
     font-size: 2rem;
     background: #fff;
-    border: .1rem solid var(--black);
-    border-radius: .5rem;
+    border: 0.1rem solid var(--black);
+    border-radius: 0.5rem;
     padding: 1.5rem;
     margin: 1.5rem;
     display: block;
@@ -292,10 +545,20 @@ section {
   .text {
     width: 60%;
   }
+  .prev,
+  .next {
+    top: 85%;
+  }
 }
 
-@media (max-width:400px) {
- html {
-  font-size: 50%;
- }
+@media (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+  .images {
+    padding-bottom: 2rem;
+  }
+  .heading {
+    font-size: 3rem;
+  }
 }
